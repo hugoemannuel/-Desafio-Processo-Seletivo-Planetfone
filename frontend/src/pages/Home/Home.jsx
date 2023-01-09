@@ -11,7 +11,7 @@ const Home = () => {
       const response = await userService.getAll();
       setData(response)
     } catch (error) {
-      console.log('***erro', error)
+      return error
     }
   }, [])
 
