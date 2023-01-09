@@ -8,7 +8,8 @@ import {
   TableContainer,
   TableHead ,
   TableRow,
-  Paper
+  Paper,
+  Typography
 } from '@mui/material';
 
 const TableUser = ({data}) => {
@@ -27,6 +28,8 @@ const TableUser = ({data}) => {
 
   }, [data])
 
+  console.log('***rows', rows.length)
+
 
 // componente de tabela criado com a lib Material UI
   return (
@@ -41,7 +44,7 @@ const TableUser = ({data}) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          { rows.length > 0 ? rows.map((row) => (
             <TableRow
               key={row.id}>
               <TableCell component="th" scope="row">
@@ -51,7 +54,10 @@ const TableUser = ({data}) => {
               <TableCell align="right">{row.username}</TableCell>
               <TableCell align="right">{row.email}</TableCell>
             </TableRow>
-          ))}
+          )):
+          <TableRow>
+            <Typography>Não foi possível Obter os dados dos Usuários</Typography>
+          </TableRow>}
         </TableBody>
       </Table>
     </TableContainer>
