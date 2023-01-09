@@ -20,7 +20,7 @@ cujo objetivo foi consumir uma Api já existente e retornar seus dados já filtr
 
 -Clone o repositório através da seguinte chave https: `https://github.com/hugoemannuel/Desafio-Processo-Seletivo-Planetfone.git`
 
--Rode o comando `npm install` para instalar as dependências do projeto
+-Rode o comando `npm install` em seu terminal, nas pastas BackEnd e FrontEnd para instalar as dependências do projeto.
 
 -Para iniciar a aplicação no Back End, acesse o Back End e rode o comando `npm start` em seu terminal.
 
