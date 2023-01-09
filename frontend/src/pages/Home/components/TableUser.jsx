@@ -28,9 +28,6 @@ const TableUser = ({data}) => {
 
   }, [data])
 
-  console.log('***rows', rows.length)
-
-
 // componente de tabela criado com a lib Material UI
   return (
     <TableContainer className="Table-container" component={Paper}>
